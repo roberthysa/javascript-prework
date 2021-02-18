@@ -2,18 +2,38 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kamień, papier, nożyce</title>
+  <link rel="stylesheet" href="vendor/bootstrap-grid.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="container">
-	  <div id="buttons">
-      <button id="button-test">Test</button>
+  <div class="rules col">
+    <div>
+      <h1>Gra – papier, kamień, nożyce</h1>
+      <h2>Zasady gry</h2>
+      <p>
+        Pojedyncza runda gry polega na jednoczesnym zagraniu dwóch graczy.<br />
+        Każdy gracz może wybrać jeden z ruchów: papier, kamień, lub nożyce.<br />
+        Jednym graczem jesteś Ty, a rolę drugiego gracza pełni komputer.<br /><br />
+        Wynik rundy może być następujący:<br />
+        <ul>
+          <li>remis – jeśli obaj gracze wybrali ten sam ruch,</li>
+          <li>wygrana gracza, który zagrał papier, jeśli drugi gracz zagrał kamień,</li>
+          <li>wygrana gracza, który zagrał kamień, jeśli drugi gracz zagrał nożyce,</li>
+          <li>wygrana gracza, który zagrał nożyce, jeśli drugi gracz zagrał papier.</li>
+        </ul>
+        Wybierz swój ruch klikając w jeden z poniższych przycisków:
+      </p>
+    </div>
+  </div>
+  <div class="container game-buttons col">
+	  <div class="btn" id="buttons">
       <button id="button-rock">Kamień</button>
       <button id="button-paper">Papier</button>
       <button id="button-scissors">Nożyce</button>
     </div>
-	  <div id="messages"></div>
+	<div class="msg col" id="messages"></div>
   </div>
   <script src="js/functions.js"></script>
 	<script src="js/script.js"></script>

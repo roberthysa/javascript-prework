@@ -1,0 +1,54 @@
+/* Variables */
+
+$font-text: 'Inconsolata', monospace;
+$buttons-bgn-color: #2c2c54;
+$transition: all 1s;
+$color-one: #c0392b;
+
+body {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: $font-text;
+  color: #2c2c54;
+}
+
+/*Buttons*/
+
+.btn {
+  display: inline-block;
+  min-width: 160px;
+  margin: 12px auto 12px auto;
+  padding: 12px;
+  border-radius: 5px;
+  font-family: $font-text;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-width: 2px;
+  border-style: solid;
+  background-color: $buttons-bgn-color;
+  background-position: 100% 0;
+  background-size: 300%;
+  transition: $transition;
+}
+
+/*Rules*/
+
+.rules, .game-buttons, .msg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rules h1 {
+  color: $color-one;
+}
+
+/*Msg*/
+
+.msg {
+  color: $color-one;
+}
