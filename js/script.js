@@ -8,13 +8,12 @@ const buttonScissors = document.getElementById('button-scissors');
 function buttonClicked(argButtonName) {
   clearMessages();
   console.log(argButtonName + ' został kliknięty');
-  playerMove = argButtonName;
-  console.log('ruch gracza to: ' + playerMove);
+  console.log('ruch gracza to: ' + argButtonName);
   const randomNumber = Math.floor(Math.random() * 3 + 1);
   console.log('wylosowana liczba to: ' + randomNumber);
   const computerMove = getMoveName(randomNumber);
   console.log('ruch komputera to: ' + computerMove);
-  displayResult(playerMove, computerMove);
+  displayResult(argButtonName, computerMove);
 }
 
   /**
